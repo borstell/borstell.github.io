@@ -2611,7 +2611,7 @@
 
 /* One */
 
-	#one:before {
+	#about:before {
 		background-image: url("../../images/jaffa.png");
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -2796,7 +2796,7 @@
 
 		/* One */
 
-			#one:before {
+			#about:before {
 				height: 10em;
 			}
 
@@ -2994,7 +2994,7 @@
 
 		/* One */
 
-			#one:before {
+			#about:before {
 				height: 7em;
 			}
 
