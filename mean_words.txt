@@ -1,4 +1,4 @@
-Concept	AverageWord	NumberOfLanguages
+Concept	AverageWord	NumberOfWords
 blood	kamaa	8372
 bone	kukaa	8903
 breast	busua	8630
