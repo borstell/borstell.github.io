@@ -8,6 +8,7 @@ output: html_document
 ![](./lussetitle.jpeg)
 
 # Ingredients
+(makes about 10—12 buns)
 
 ## For the dough:
 * 300 grams of bread flour
