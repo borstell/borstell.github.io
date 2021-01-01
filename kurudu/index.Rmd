@@ -12,13 +12,11 @@ bibliography: kurudu_NP.bib
 ---
 
 # Preface {-#preface}
-> *The following document is the result of an intro class to field linguistics in 2010. The basic "fieldwork" took place at Stockholm University with a native speaker[^maury] of Kurudu (ISO: `kjr`; see map below)[^kaipuri] during approximately 10 elicitation sessions (see also Section 1 below). Thus, it is not meant to be a comprehensive guide to Kurudu language, nor does it make any claims of being completely accurate. However, due to the limited resources/documentation for this language, I decided to make this fragment available, with the hopes of future in-depth work being conducted on the language. (NB: Some smaller typographical mistakes have been corrected from the original paper.)*
+> *The following document is the result of an intro class to field linguistics in 2010. The basic "fieldwork" took place at Stockholm University with a native speaker of Kurudu (ISO: `kjr`; see map below)[^kaipuri] during approximately 10 elicitation sessions (see also Section 1 below). Thus, it is not meant to be a comprehensive guide to Kurudu language, nor does it make any claims of being completely accurate. However, due to the limited resources/documentation for this language, I decided to make this fragment available, with the hopes of future in-depth work being conducted on the language. (NB: Some smaller typographical mistakes have been corrected from the original paper.)*
 
 Carl Börstell, Nijmegen, 30 January, 2019
 
-[^maury]: The informant, Mr. Maury, passed away approximately three years after the data for this course were collected (see https://swepaeu.wordpress.com/2013/09/20/dorinus-ruben-maury-r-i-p/).
-
-[^kaipuri]: Our informant, Mr. Maury, referred to his language as *Kaipuri*, after his village. Thus, we referred to the language using this label, which is why the document below will refer to the Kaipuri language. Whether there are great variation between the villages on the Kurudu island is not known to me, and all current classifications appear to use the label *Kurudu* for the language on the island.
+[^kaipuri]: Our informant referred to the language as *Kaipuri*, after their village. Thus, we referred to the language using this label, which is why the document below will refer to the Kaipuri language. Whether there are great variation between the villages on the Kurudu island is not known to me, and all current classifications appear to use the label *Kurudu* for the language on the island.
 
 
 ```{r, echo=FALSE, warning=FALSE}
@@ -35,7 +33,7 @@ This paper on the morphosyntax of the NP in Kaipuri is the result of a fieldwork
 
 This paper is divided into to major segments: the first (section 2) deals with some basic morphology that concerns the NP; and the second (section 3) deals more with the syntax of the NP. Please bear in mind that this work should be seen as a first draft of a basic grammatical description, still containing several gaps and unresolved matters.
 
-I would like to take this opportunity to thank Mr. Dorinus Ruben Maury for participating as the language consultant for this project, who made this work even possible. Thank you. 
+I would like to take this opportunity to thank our informant for participating as the language consultant for this project, who made this work even possible. Thank you. 
 
 ## Glossing used for this paper
 The glossing convention for this paper follows that of the [Leipzig Glossing Rules](https://www.eva.mpg.de/lingua/resources/glossing-rules.php), but the specific glosses used in this paper are given below for convenience.
