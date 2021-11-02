@@ -2489,7 +2489,7 @@
 
 	#header {
 		background: #FFA1A1;
-		color: #FEE2E2;
+		color: #FC6565;
 		height: 100%;
 		position: fixed;
 		text-align: center;
@@ -2507,11 +2507,11 @@
 			}
 
 		#header header p {
-			color: #FEE2E2;
+			color: #FC6565;
 		}
 
 		#header a {
-			color: #FEE2E2;
+			color: #FC6565;
 		}
 
 			#header a:hover {
@@ -2534,7 +2534,7 @@
 			}
 
 			#header > header p {
-				color: #FEE2E2;
+				color: #FC6565;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2552,7 +2552,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #FEE2E2;
+					color: #FC6565;
 				}
 
 		#header > nav ul {
