@@ -12,7 +12,7 @@ split_pano <- function(path, ratio="square") {
   }
   crop_width <- floor(as.integer(height)*ratio_factor)
   num <- as.integer(width) %/% crop_width
-  file_name <- gsub(".*/", "", path)
+  file_name <- gsub(".*/", "", path)
   path_name <- gsub(file_name, "", path)
   extension <- paste0(".",tools::file_ext(file_name))
   fname <- gsub(extension, "", file_name)
