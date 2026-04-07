@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "readelan",
+    "section": "",
+    "text": "readelan"
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "readelan",
+    "section": "Installation",
+    "text": "Installation\nYou can download the official release version of {readelan} from CRAN:\ninstall.packages(\"readelan\")\nAlternatively, you can install the development version like so:\npak::pak(\"borstell/readelan\")"
+  },
+  {
+    "objectID": "index.html#basic-use",
+    "href": "index.html#basic-use",
+    "title": "readelan",
+    "section": "Basic use",
+    "text": "Basic use\nThe purpose of the {readelan} package is to allow users to read data and metadata from ELAN files.\nBy loading the package into your session, you get access the the package’s function:\n\nlibrary(readelan)\n\n\nAnnotations\nTo read annotations from an .eaf file, you can use the read_eaf() function.\nRead more: Reading annotations.\n\n\nTiers\nTo retrieve the tiers (IDs/names, types, parent-child structure, etc.) of either an .eaf (annotation) or an .etf (template) file, you can use the read_tiers() function.\nRead more: Retrieving tiers.\n\n\nMedia metadata\nTo find the media metadata (file paths and types of linked audio and video files) of an .eaf file, you can use the read_media() function.\nRead more: Linked media metadata.\n\n\nControlled vocabularies (CV)\nTo extract either internal controlled vocabularies (CV) or linked external controlled vocabularies (ECV) of an .eaf (annotation), .etf (template) or .ecv (external CV) file, you can use the read_cv() function.\nRead more: Extracting CVs.\n\n\nMultiple files\nAll read_ functions in {readelan} accept either a single file or a vector of files as input.\nRead more: Reading multiple files."
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "{readelan} is released under the permissive MIT License:"
+  },
+  {
+    "objectID": "license.html#mit-license",
+    "href": "license.html#mit-license",
+    "title": "License",
+    "section": "MIT License",
+    "text": "MIT License\nCopyright (c) 2026 readelan authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "citation.html",
+    "href": "citation.html",
+    "title": "Citation",
+    "section": "",
+    "text": "Please cite {readelan} if you use it in your work.\n{readelan} is released on CRAN, which makes it easy to print the citation directly with R:\n\ncitation(\"readelan\")\n\nTo cite package 'readelan' in publications use:\n\n  Börstell C (2026). _readelan: Read 'ELAN' Files_.\n  doi:10.32614/CRAN.package.readelan\n  &lt;https://doi.org/10.32614/CRAN.package.readelan&gt;, R package version\n  0.1.0, &lt;https://CRAN.R-project.org/package=readelan&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {readelan: Read 'ELAN' Files},\n    author = {Carl Börstell},\n    year = {2026},\n    note = {R package version 0.1.0},\n    url = {https://CRAN.R-project.org/package=readelan},\n    doi = {10.32614/CRAN.package.readelan},\n  }"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "readelan",
+    "section": "License",
+    "text": "License\n{readelan} is released under the permissive MIT License."
+  },
+  {
+    "objectID": "reasons.html",
+    "href": "reasons.html",
+    "title": "Why use {readelan}?",
+    "section": "",
+    "text": "The {readelan} package is a fast yet lightweight package with only one dependency outside of core packages, namely {xml2}. The {xml2} package is central to access the inner structure of ELAN files, which are all fundamentally XML files."
+  },
+  {
+    "objectID": "reasons.html#what-is-readelan",
+    "href": "reasons.html#what-is-readelan",
+    "title": "Why use {readelan}?",
+    "section": "",
+    "text": "The {readelan} package is a fast yet lightweight package with only one dependency outside of core packages, namely {xml2}. The {xml2} package is central to access the inner structure of ELAN files, which are all fundamentally XML files."
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "{readelan} is an R package with the explicit goal to facilitate reading ELAN files into R for further analysis.\nThe {readelan} package is a fast yet lightweight package with only one dependency outside of core packages, namely {xml2}. The {xml2} package is central to access the inner structure of ELAN files, which are all fundamentally XML files."
+  },
+  {
+    "objectID": "faq.html#what-is-readelan",
+    "href": "faq.html#what-is-readelan",
+    "title": "FAQ",
+    "section": "",
+    "text": "{readelan} is an R package with the explicit goal to facilitate reading ELAN files into R for further analysis.\nThe {readelan} package is a fast yet lightweight package with only one dependency outside of core packages, namely {xml2}. The {xml2} package is central to access the inner structure of ELAN files, which are all fundamentally XML files."
+  },
+  {
+    "objectID": "faq.html#why-was-readelan-needed",
+    "href": "faq.html#why-was-readelan-needed",
+    "title": "FAQ",
+    "section": "Why was {readelan} needed?",
+    "text": "Why was {readelan} needed?\nIn my experience, many researchers in linguistics and related field (e.g., psychology, cognitive science, anthropology, etc.) use the ELAN annotation software regularly, and simultaneously use the R programming language for analysis. Despite this, there was no dedicated package on CRAN for reading ELAN files.\nAt least a couple of other packages on CRAN have functions to read ELAN annotation files (.eaf) into R, but these packages are not targeting all the different files associated with ELAN, and they are also part of larger packages with a much broader scope – e.g., {act} and {phonfieldwork}. Benchmarking against these other packages indicate that {readelan} is fast option:\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nmicrobenchmark::microbenchmark(\n  readelan::read_eaf(eaf_file),\n  phonfieldwork::eaf_to_df(eaf_file),\n  act::import_eaf(eaf_file),\n  times = 10\n)\n\nUnit: milliseconds\n                               expr       min        lq      mean    median\n       readelan::read_eaf(eaf_file)  3.750718  3.886996  5.138851  4.924746\n phonfieldwork::eaf_to_df(eaf_file) 13.535165 14.084316 88.521082 14.151778\n          act::import_eaf(eaf_file) 61.852629 67.594326 79.324778 68.738691\n        uq       max neval cld\n  5.826621   7.55366    10   a\n 14.800122 754.83798    10   a\n 84.518526 153.25400    10   a"
+  },
+  {
+    "objectID": "faq.html#can-i-read-multiple-files-with-readelan",
+    "href": "faq.html#can-i-read-multiple-files-with-readelan",
+    "title": "FAQ",
+    "section": "Can I read multiple files with {readelan}?",
+    "text": "Can I read multiple files with {readelan}?\nYes! All read_ functions in {readelan} accept either a single file or a vector of files as input."
+  },
+  {
+    "objectID": "faq.html#can-i-pre-select-which-tiers-to-read",
+    "href": "faq.html#can-i-pre-select-which-tiers-to-read",
+    "title": "FAQ",
+    "section": "Can I pre-select which tiers to read?",
+    "text": "Can I pre-select which tiers to read?\nYes! In read_eaf(), you can use the arguments tiers (or xpath if more advanced) to specify specific tiers by names or types to read. This speeds up the process of reading the data, since only some tiers need to be read.\nFor instance, if I know that I only want to read the tiers “Lexem_Gebärde_l_A” and “Lexem_Gebärde_r_A” in this file from the DGS-Korpus, I can specify this and read the file much faster.\n\ndgs_file &lt;- \"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf\"\n\nmicrobenchmark::microbenchmark(\n  readelan::read_eaf(dgs_file),\n  readelan::read_eaf(dgs_file,\n                     tiers = list(tier = c(\"Lexem_Gebärde_l_A\", \"Lexem_Gebärde_r_A\"))),\n  times = 1\n)\n\nUnit: milliseconds\n                                                                                                expr\n                                                                        readelan::read_eaf(dgs_file)\n readelan::read_eaf(dgs_file, tiers = list(tier = c(\"Lexem_Gebärde_l_A\",      \"Lexem_Gebärde_r_A\")))\n      min       lq     mean   median       uq      max neval\n 731.5419 731.5419 731.5419 731.5419 731.5419 731.5419     1\n 483.8184 483.8184 483.8184 483.8184 483.8184 483.8184     1"
+  },
+  {
+    "objectID": "faq.html#can-i-read-files-online",
+    "href": "faq.html#can-i-read-files-online",
+    "title": "FAQ",
+    "section": "Can I read files online?",
+    "text": "Can I read files online?\nYes! Since the functions rely on the {xml2} package, which can read files directly from an online location (as long as it is structured as an XML file), you can simply point the read_ functions in {readelan} to the URL of the file itself and it should read it, assuming you have an internet connection."
+  },
+  {
+    "objectID": "faq.html#can-i-write-files-back-into-elan",
+    "href": "faq.html#can-i-write-files-back-into-elan",
+    "title": "FAQ",
+    "section": "Can I write files back into ELAN?",
+    "text": "Can I write files back into ELAN?\nNo. The goal of {readelan} is to allow for the reading of ELAN data into R, not the other way around. ELAN has great options for importing data from character-separated values (e.g., .csv) files and other file formats. However, if you do require the possibility to write data back into ELAN files, you should look at the {phonfieldwork} package."
+  },
+  {
+    "objectID": "faq.html#can-i-read-multiple-files",
+    "href": "faq.html#can-i-read-multiple-files",
+    "title": "FAQ",
+    "section": "Can I read multiple files?",
+    "text": "Can I read multiple files?\nYes! All read_ functions in {readelan} accept either a single file or a vector of files as input (see also Reading multiple files)."
+  },
+  {
+    "objectID": "faq.html#can-i-select-which-tiers-to-read",
+    "href": "faq.html#can-i-select-which-tiers-to-read",
+    "title": "FAQ",
+    "section": "Can I select which tiers to read?",
+    "text": "Can I select which tiers to read?\nYes! In read_eaf(), you can use the arguments tiers (or xpath if more advanced) to specify specific tiers by names or types to read. This speeds up the process of reading the data, since only some tiers need to be read.\nFor instance, if I know that I only want to read the tiers “Lexem_Gebärde_l_A” and “Lexem_Gebärde_r_A” in this file from the DGS-Korpus, I can specify this and read the file much faster.\n\ndgs_file &lt;- \"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf\"\n\nmicrobenchmark::microbenchmark(\n  readelan::read_eaf(dgs_file),\n  readelan::read_eaf(dgs_file,\n                     tiers = list(tier = c(\"Lexem_Gebärde_l_A\", \"Lexem_Gebärde_r_A\"))),\n  times = 1\n)\n\nUnit: milliseconds\n                                                                                                expr\n                                                                        readelan::read_eaf(dgs_file)\n readelan::read_eaf(dgs_file, tiers = list(tier = c(\"Lexem_Gebärde_l_A\",      \"Lexem_Gebärde_r_A\")))\n      min       lq     mean   median       uq      max neval\n 727.2490 727.2490 727.2490 727.2490 727.2490 727.2490     1\n 419.4928 419.4928 419.4928 419.4928 419.4928 419.4928     1"
+  },
+  {
+    "objectID": "faq.html#should-i-cite-readelan",
+    "href": "faq.html#should-i-cite-readelan",
+    "title": "FAQ",
+    "section": "Should I cite {readelan}?",
+    "text": "Should I cite {readelan}?\nMy personal opinion is to cite software for two reasons: to credit the work (especially if it is open source and/or voluntary-based) and for reproducibility. You can cite {readelan} by using the citation(\"readelan\") function in R (see also Citation)."
+  },
+  {
+    "objectID": "faq.html#i-found-a-bug",
+    "href": "faq.html#i-found-a-bug",
+    "title": "FAQ",
+    "section": "I found a bug",
+    "text": "I found a bug\nOh no! Please report it by filing an issue on GitHub. You may also try to contact the maintainer via email to report a bug or ask for assistance, but I may not be able to respond to such requests quickly."
+  },
+  {
+    "objectID": "index.html#license-citation",
+    "href": "index.html#license-citation",
+    "title": "readelan",
+    "section": "License & Citation",
+    "text": "License & Citation\n\nLicense\n{readelan} is released under the permissive MIT License.\n\n\nCitation\nYou can cite {readelan} by using the citation(\"readelan\") function in R (see also Citation)"
+  },
+  {
+    "objectID": "faq.html#what-is-the-function-output",
+    "href": "faq.html#what-is-the-function-output",
+    "title": "FAQ",
+    "section": "What is the function output?",
+    "text": "What is the function output?\nThe read_ functions of {readelan} output base R data frames. If you read multiple files, the individual data frames (from each input file) are already combined together into a single data frame in the output.\nIf you prefer to work with {tidyverse}-style tibbles, you will need to convert the output:\nread_eaf(\"path/to/elan_file.eaf\") |&gt; \n  tibble::as_tibble()"
+  },
+  {
+    "objectID": "annotations.html#reading-an-online-file",
+    "href": "annotations.html#reading-an-online-file",
+    "title": "Reading ELAN annotations",
+    "section": "Reading an online file",
+    "text": "Reading an online file\nFiles do not have to be stored locally, but can be read directly from an online location, assuming you have an internet connection. Thus, we can read files directly from the DGS-Korpus repository like so:\n\nlibrary(readelan)\n\ndgs_file &lt;- read_eaf(\"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf\")\n\nhead(dgs_file)\n\n                       filename        a time_1 time_2\n1 1413451-11105600-11163240.eaf a2834768    ts1   ts12\n2 1413451-11105600-11163240.eaf a2834772   ts12   ts19\n3 1413451-11105600-11163240.eaf a2834780   ts19   ts40\n4 1413451-11105600-11163240.eaf a2834793   ts40   ts63\n5 1413451-11105600-11163240.eaf a2834798   ts63   ts68\n6 1413451-11105600-11163240.eaf a2834800   ts68   ts76\n                                                                                    annotation\n1                                                                     Wie mein Leben aussieht?\n2                                                  Na ja, ich bin als Gehörloser aufgewachsen.\n3 Ich habe eher das Gefühl, wenn ich mir vorstelle, dass ich allein bin, dann wäre ich einsam.\n4     Da treffe ich lieber viele Gehörlose und mache mit denen was, dann ist mein Leben schön.\n5                                                                        Aber das ist ja klar.\n6                                                           Dann ist Alleinsein nicht schlimm.\n                    tier                 tier_type participant annotator\n1 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n2 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n3 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n4 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n5 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n6 Deutsche_Übersetzung_A L_text__finer_granularity      ber-36      &lt;NA&gt;\n  parent_ref a_ref language_ref cv_id cve_ref start   end duration    time_unit\n1       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;   240  2160     1920 milliseconds\n2       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  2160  4120     1960 milliseconds\n3       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  4120  7860     3740 milliseconds\n4       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  7860 11180     3320 milliseconds\n5       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt; 11180 12340     1160 milliseconds\n6       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt; 12340 13500     1160 milliseconds"
+  },
+  {
+    "objectID": "annotations.html",
+    "href": "annotations.html",
+    "title": "Reading ELAN annotations",
+    "section": "",
+    "text": "One of the most basic use cases for {readelan} is to read the annotations inside an ELAN annotation file (.eaf) directly into R."
+  },
+  {
+    "objectID": "annotations.html#reading-a-file",
+    "href": "annotations.html#reading-a-file",
+    "title": "Reading ELAN annotations",
+    "section": "Reading a file",
+    "text": "Reading a file\nWe can read a very basic example EAF file as it is stored inside the {readelan} package:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nannotations &lt;- read_eaf(eaf_file)\n\nhead(annotations)\n\n     filename  a time_1 time_2 annotation   tier  tier_type participant\n1 example.eaf a1    ts1    ts2          I  words default-lt        s001\n2 example.eaf a2    ts3    ts4       like  words default-lt        s001\n3 example.eaf a3    ts5    ts6       cats  words default-lt        s001\n4 example.eaf a4    ts1    ts2    pronoun    pos        pos        s001\n5 example.eaf a7    ts1    ts2    subject syntax     syntax        s001\n6 example.eaf a5    ts3    ts4       verb    pos        pos        s001\n  annotator parent_ref a_ref language_ref  cv_id\n1       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n2       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n3       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n4       DEF      words    a1          eng    pos\n5       GHI      words    a1          eng syntax\n6       DEF      words    a2          eng    pos\n                                     cve_ref start  end duration    time_unit\n1                                       &lt;NA&gt;   490 1590     1100 milliseconds\n2                                       &lt;NA&gt;  2010 3670     1660 milliseconds\n3                                       &lt;NA&gt;  4370 5980     1610 milliseconds\n4 cveid_89b2ac38-7313-4737-aa5f-19e1231ccb18   490 1590     1100 milliseconds\n5 cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b   490 1590     1100 milliseconds\n6 cveid_d5558ab7-11c3-47d5-9a0f-403724b0e0b7  2010 3670     1660 milliseconds"
+  },
+  {
+    "objectID": "annotations.html#additional-arguments",
+    "href": "annotations.html#additional-arguments",
+    "title": "Reading ELAN annotations",
+    "section": "Additional arguments",
+    "text": "Additional arguments\n\nSpecifying tiers\nThere are two argument with which you can specify which tiers or tier types you want to read from your EAF file: tiers (simple to use but constrained) and xpath (complicated to use but more customizable).\nWith tiers, you can input a named list with either tier or tier_type as names, and single character strings or character vectors as their values, to specify tiers to read. For instance, if I know that there are only two tiers that I want to read in a file, I can specify this:\n\nlibrary(readelan)\n\ndgs_file &lt;- \n  read_eaf(file = \"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf\",\n           tiers = list(tier = c(\"Lexem_Gebärde_l_A\",\n                                 \"Lexem_Gebärde_r_A\")))\n\nhead(dgs_file)\n\n                       filename          a time_1 time_2    annotation\n1 1413451-11105600-11163240.eaf a2914979_1    ts2    ts3       SEHEN1*\n2 1413451-11105600-11163240.eaf a2567654_1    ts4    ts5     SELBST1A*\n3 1413451-11105600-11163240.eaf a2567651_1    ts6    ts7      LEBEN1A*\n4 1413451-11105600-11163240.eaf a2567657_1    ts8    ts9        SEHEN1\n5 1413451-11105600-11163240.eaf a2567656_1   ts10   ts11    $GEST-OFF^\n6 1413451-11105600-11163240.eaf a2567658_1   ts13   ts14 AUFWACHSEN1A*\n               tier                              tier_type participant\n1 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n2 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n3 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n4 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n5 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n6 Lexem_Gebärde_r_A L_tokens_right_left__finer_granularity      ber-36\n  annotator parent_ref a_ref language_ref cv_id cve_ref start  end duration\n1      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;   700  860      160\n2      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;   920 1140      220\n3      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  1280 1520      240\n4      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  1660 1800      140\n5      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  1960 2060      100\n6      &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  2300 2480      180\n     time_unit\n1 milliseconds\n2 milliseconds\n3 milliseconds\n4 milliseconds\n5 milliseconds\n6 milliseconds\n\n\nIf you want to specify tier types instead, that can be done in the same way:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nannotations &lt;- \n  read_eaf(file = eaf_file,\n           tiers = list(tier_type = c(\"default-lt\", \"syntax\")))\n\nhead(annotations)\n\n     filename  a time_1 time_2 annotation   tier  tier_type participant\n1 example.eaf a1    ts1    ts2          I  words default-lt        s001\n2 example.eaf a2    ts3    ts4       like  words default-lt        s001\n3 example.eaf a3    ts5    ts6       cats  words default-lt        s001\n4 example.eaf a7    ts1    ts2    subject syntax     syntax        s001\n5 example.eaf a8    ts3    ts4  predicate syntax     syntax        s001\n6 example.eaf a9    ts5    ts6     object syntax     syntax        s001\n  annotator parent_ref a_ref language_ref  cv_id\n1       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n2       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n3       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;   &lt;NA&gt;\n4       GHI      words    a1          eng syntax\n5       GHI      words    a2          eng syntax\n6       GHI      words    a3          eng syntax\n                                     cve_ref start  end duration    time_unit\n1                                       &lt;NA&gt;   490 1590     1100 milliseconds\n2                                       &lt;NA&gt;  2010 3670     1660 milliseconds\n3                                       &lt;NA&gt;  4370 5980     1610 milliseconds\n4 cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b   490 1590     1100 milliseconds\n5 cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da  2010 3670     1660 milliseconds\n6 cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02  4370 5980     1610 milliseconds\n\n\nWith the xpath argument, you can directly target tiers using XPath syntax. This is more complicated for the basic user, but allows for some additional functionality and customization for the advanced user, such as targeting tiers based on substrings, like tiers staring with “wo” (targeting “words”):\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nannotations &lt;- \n  read_eaf(file = eaf_file,\n           xpath = \".//TIER[starts-with(@TIER_ID,'wo')]\")\n\nhead(annotations)\n\n     filename  a time_1 time_2 annotation  tier  tier_type participant\n1 example.eaf a1    ts1    ts2          I words default-lt        s001\n2 example.eaf a2    ts3    ts4       like words default-lt        s001\n3 example.eaf a3    ts5    ts6       cats words default-lt        s001\n  annotator parent_ref a_ref language_ref cv_id cve_ref start  end duration\n1       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;   490 1590     1100\n2       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  2010 3670     1660\n3       ABC       &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;  4370 5980     1610\n     time_unit\n1 milliseconds\n2 milliseconds\n3 milliseconds\n\n\n\n\nTime slots for child tiers\nThe argument fill_times is set to TRUE by default, which means that the read_eaf() function attempts to fill the empty time slots (i.e., start and end times of annotations) for child annotations based on their parents’ annotations. This is usually the output most users would likely want, but it may result in unexpected behavior in some cases. For instance, while it works normally in cases like above, where there are parent annotations to fill times from, it will not work if the file for some reason lacks time slots altogether, or if only child tiers are targeted. In such cases, setting this argument to FALSE should solve the issue of reading the file, but will leave time slots empty as in the original EAF file:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\n# This will result in an error:\n# annotations &lt;- \n#   read_eaf(file = eaf_file,\n#            tiers = list(tier_type = c(\"syntax\")))\n\n# This should work\nannotations &lt;- \n  read_eaf(file = eaf_file,\n           tiers = list(tier_type = c(\"syntax\")),\n           fill_times = FALSE)\n\nhead(annotations)\n\n     filename  a time_1 time_2 annotation   tier tier_type participant\n1 example.eaf a7   &lt;NA&gt;   &lt;NA&gt;    subject syntax    syntax        s001\n2 example.eaf a8   &lt;NA&gt;   &lt;NA&gt;  predicate syntax    syntax        s001\n3 example.eaf a9   &lt;NA&gt;   &lt;NA&gt;     object syntax    syntax        s001\n  annotator parent_ref a_ref language_ref  cv_id\n1       GHI      words    a1          eng syntax\n2       GHI      words    a2          eng syntax\n3       GHI      words    a3          eng syntax\n                                     cve_ref start end duration    time_unit\n1 cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b    NA  NA       NA milliseconds\n2 cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da    NA  NA       NA milliseconds\n3 cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02    NA  NA       NA milliseconds\n\n\n\n\nWriting full paths\nThe full_path argument simply determines whether the full file path input should be written to the output data frame as the filename (if TRUE; e.g., “/path/to/elan_file.eaf”), or whether it should be shortened to the base name only (if FALSE, the default; e.g., “elan_file.eaf”).\n\n\nProgress bar\nIf progress is set to TRUE, a progress bar will be printed to the console as files are read. This is mostly useful when reading multiple files that take some time to complete (see Multiple files)."
+  },
+  {
+    "objectID": "media.html",
+    "href": "media.html",
+    "title": "Linked media metadata",
+    "section": "",
+    "text": "Since ELAN annotation files are based on annotating multimedia (audio and/or video), EAF annotation files (should) always have linked media files in their file contents. Sometimes it is useful to access the paths to and types of these files as metadata alongside annotations. This can be done using read_media(), which simply outputs a data frame with the associated media file(s) with paths and file types listed in long format:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nread_media(eaf_file)\n\n     filename item          attribute                             value\n1 example.eaf    1          MEDIA_URL file:///Users/user01/video_01.mp4\n2 example.eaf    1          MIME_TYPE                         video/mp4\n3 example.eaf    1 RELATIVE_MEDIA_URL                    ./video_01.mp4\n4 example.eaf    2          MEDIA_URL file:///Users/user01/video_02.mp4\n5 example.eaf    2          MIME_TYPE                         video/mp4\n6 example.eaf    2 RELATIVE_MEDIA_URL                    ./video_02.mp4\n7 example.eaf    3          MEDIA_URL file:///Users/user01/audio_02.mp3\n8 example.eaf    3          MIME_TYPE                           audio/*\n9 example.eaf    3 RELATIVE_MEDIA_URL                    ./audio_02.mp3\n\n\nThe item column is an identifier for an individual linked file in the EAF file, thus there are three linked media files (two videos; one audio) in this example."
+  },
+  {
+    "objectID": "media.html#reading-media-metadata",
+    "href": "media.html#reading-media-metadata",
+    "title": "Linked media metadata",
+    "section": "",
+    "text": "Since ELAN annotation files are based on annotating multimedia (audio and/or video), EAF annotation files (should) always have linked media files in their file contents. Sometimes it is useful to access the paths to and types of these files as metadata alongside annotations. This can be done using read_media(), which simply outputs a data frame with the associated media file(s) with paths and file types listed in long format:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nread_media(eaf_file)\n\n     filename item          attribute                             value\n1 example.eaf    1          MEDIA_URL file:///Users/user01/video_01.mp4\n2 example.eaf    1          MIME_TYPE                         video/mp4\n3 example.eaf    1 RELATIVE_MEDIA_URL                    ./video_01.mp4\n4 example.eaf    2          MEDIA_URL file:///Users/user01/video_02.mp4\n5 example.eaf    2          MIME_TYPE                         video/mp4\n6 example.eaf    2 RELATIVE_MEDIA_URL                    ./video_02.mp4\n7 example.eaf    3          MEDIA_URL file:///Users/user01/audio_02.mp3\n8 example.eaf    3          MIME_TYPE                           audio/*\n9 example.eaf    3 RELATIVE_MEDIA_URL                    ./audio_02.mp3\n\n\nThe item column is an identifier for an individual linked file in the EAF file, thus there are three linked media files (two videos; one audio) in this example."
+  },
+  {
+    "objectID": "media.html#additional-arguments",
+    "href": "media.html#additional-arguments",
+    "title": "Linked media metadata",
+    "section": "Additional arguments",
+    "text": "Additional arguments\n\nWriting full paths\nThe full_path argument simply determines whether the full file path input should be written to the output data frame as the filename (if TRUE; e.g., “/path/to/elan_file.eaf”), or whether it should be shortened to the base name only (if FALSE, the default; e.g., “elan_file.eaf”).\n\n\nProgress bar\nIf progress is set to TRUE, a progress bar will be printed to the console as files are read. This is mostly useful when reading multiple files that take some time to complete (see Multiple files)."
+  },
+  {
+    "objectID": "multiple.html",
+    "href": "multiple.html",
+    "title": "Reading multiple files",
+    "section": "",
+    "text": "All read_ functions accept either a single file or a vector of files as input. If you, for instance, have a folder on your computer that contains multiple EAF files and you want to read all of them as a single data frame, you can use the list.files() function in R to first get a vector of files, and then use this as input to the read_eaf() function.\neaf_files &lt;- \n  list.files(path = \"/path/to/my/eaf/files/\", # The path your files\n             pattern = \"\\\\.eaf$\", # Specifying files ending with \".eaf\" only\n             full.names = TRUE, # Specifying full file names as input\n             recursive = TRUE # In case there are subfolders within the folders\n  )\n\nannotations &lt;- \n  read_eaf(file = eaf_files,\n           progress = TRUE # Print the progress as it iterates over files\n           )\nIf progress is set to TRUE, as in the example above, a progress bar will be printed to the console as files are read. This can be nice when reading multiple files that take some time to complete, since it gives you a visual illustration of how far the iteration has progressed."
+  },
+  {
+    "objectID": "tiers.html",
+    "href": "tiers.html",
+    "title": "Retrieving tiers",
+    "section": "",
+    "text": "One may need to read only the tiers in files for purposes of inspecting the tier structure, such as which tiers and tier types exist, and which parent-child relationships and associated CVs are present. This can easily be done with the read_tiers() function, which allows three types of input files:\n\nELAN annotation files (.eaf)\nELAN template files (.etf)\nELAN external controlled vocabularies (.ecv)\n\n\n\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(eaf_file)\n\nhead(tiers)\n\n     filename  tier_type   tier participant annotator parent_ref language_ref\n1 example.eaf default-lt  words        s001       ABC       &lt;NA&gt;         &lt;NA&gt;\n2 example.eaf        pos    pos        s001       DEF      words          eng\n3 example.eaf     syntax syntax        s001       GHI      words          eng\n            constraint cv_ref\n1                 &lt;NA&gt;   &lt;NA&gt;\n2 Symbolic_Association    pos\n3 Symbolic_Association syntax\n\n\n\n\n\n\nlibrary(readelan)\n\netf_file &lt;- system.file(\"extdata\", \n                        \"CLP_annotation_v2-2.etf\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(etf_file)\n\nhead(tiers)\n\n                 filename         tier_type            tier participant\n1 CLP_annotation_v2-2.etf          CLP main   CLP handshape        &lt;NA&gt;\n2 CLP_annotation_v2-2.etf    CLP congruence  CLP congruence        &lt;NA&gt;\n3 CLP_annotation_v2-2.etf         CLP event       CLP event        &lt;NA&gt;\n4 CLP_annotation_v2-2.etf   CLP interaction CLP interaction        &lt;NA&gt;\n5 CLP_annotation_v2-2.etf     CLP discourse          CLP DS        &lt;NA&gt;\n6 CLP_annotation_v2-2.etf CLP no vocabulary    CLP movement        &lt;NA&gt;\n  annotator    parent_ref language_ref           constraint          cv_ref\n1      &lt;NA&gt;          &lt;NA&gt;         &lt;NA&gt;                 &lt;NA&gt;   CLP handshape\n2      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association  CLP congruence\n3      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association       CLP event\n4      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association CLP interaction\n5      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association   CLP discourse\n6      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association            &lt;NA&gt;\n\n\n\n\n\n\nlibrary(readelan)\n\necv_file &lt;- system.file(\"extdata\", \n                        \"syntax.ecv\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(ecv_file)\n\nhead(tiers)\n\ndata frame with 0 columns and 0 rows"
+  },
+  {
+    "objectID": "tiers.html#additional-arguments",
+    "href": "tiers.html#additional-arguments",
+    "title": "Retrieving tiers",
+    "section": "Additional arguments",
+    "text": "Additional arguments\n\nWriting full paths\nThe full_path argument simply determines whether the full file path input should be written to the output data frame as the filename (if TRUE; e.g., “/path/to/elan_file.eaf”), or whether it should be shortened to the base name only (if FALSE, the default; e.g., “elan_file.eaf”).\n\n\nProgress bar\nIf progress is set to TRUE, a progress bar will be printed to the console as files are read. This is mostly useful when reading multiple files that take some time to complete (see Multiple files)."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Extracting CVs",
+    "section": "",
+    "text": "ELAN has the option of adding controlled vocabularies (CV) to annotation files (.eaf) and template files (.etf) for the purposes of constraining the possible input in annotations.\nRegular CVs are internal, stored inside the EAF/ETF file itself. External CVs (ECV) are external, linked through a URL inside the EAF/ETF file to an online .ecv file.\nThe read_cv() function can read both internal and external CVs if the ecv argument is set to TRUE (default). However, this will only work if the URLs are valid and accessible, meaning you need internet access and that the page is not restricted. If so, you may need to set ecv to FALSE, then reading only internal CVs:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nread_cv(file = eaf_file, \n        ecv = FALSE)\n\n     filename  url cv_id                                     cve_id lang_ref\n1 example.eaf &lt;NA&gt;   pos cveid_89b2ac38-7313-4737-aa5f-19e1231ccb18      eng\n2 example.eaf &lt;NA&gt;   pos cveid_89b2ac38-7313-4737-aa5f-19e1231ccb18      fin\n3 example.eaf &lt;NA&gt;   pos cveid_d5558ab7-11c3-47d5-9a0f-403724b0e0b7      eng\n4 example.eaf &lt;NA&gt;   pos cveid_d5558ab7-11c3-47d5-9a0f-403724b0e0b7      fin\n5 example.eaf &lt;NA&gt;   pos cveid_f2eec815-c427-4b61-84eb-cd1e1601c9b4      eng\n6 example.eaf &lt;NA&gt;   pos cveid_f2eec815-c427-4b61-84eb-cd1e1601c9b4      fin\n       language        value\n1 English (eng)      pronoun\n2 Finnish (fin)    pronomini\n3 English (eng)         verb\n4 Finnish (fin)        verbi\n5 English (eng)         noun\n6 Finnish (fin) substantiivi\n\n\nIf you instead want to read an .ecv directly, you can do so by simply reading it as the file input of read_cv():\n\nlibrary(readelan)\n\necv_file &lt;- system.file(\"extdata\", \n                        \"syntax.ecv\", \n                        package = \"readelan\")\n\necv &lt;- read_cv(file = ecv_file)\n\necv\n\n    filename  url  cv_id                                     cve_id lang_ref\n1 syntax.ecv &lt;NA&gt; syntax cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b      eng\n2 syntax.ecv &lt;NA&gt; syntax cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b      fin\n3 syntax.ecv &lt;NA&gt; syntax cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da      eng\n4 syntax.ecv &lt;NA&gt; syntax cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da      fin\n5 syntax.ecv &lt;NA&gt; syntax cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02      eng\n6 syntax.ecv &lt;NA&gt; syntax cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02      fin\n       language       value\n1 English (eng)     subject\n2 Finnish (fin)    subjekti\n3 English (eng)   predicate\n4 Finnish (fin) predikaatti\n5 English (eng)      object\n6 Finnish (fin)     objekti"
+  },
+  {
+    "objectID": "tiers.html#retrieving-tier-metadata",
+    "href": "tiers.html#retrieving-tier-metadata",
+    "title": "Retrieving tiers",
+    "section": "",
+    "text": "One may need to read only the tiers in files for purposes of inspecting the tier structure, such as which tiers and tier types exist, and which parent-child relationships and associated CVs are present. This can easily be done with the read_tiers() function, which allows three types of input files:\n\nELAN annotation files (.eaf)\nELAN template files (.etf)\nELAN external controlled vocabularies (.ecv)\n\n\n\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(eaf_file)\n\nhead(tiers)\n\n     filename  tier_type   tier participant annotator parent_ref language_ref\n1 example.eaf default-lt  words        s001       ABC       &lt;NA&gt;         &lt;NA&gt;\n2 example.eaf        pos    pos        s001       DEF      words          eng\n3 example.eaf     syntax syntax        s001       GHI      words          eng\n            constraint cv_ref\n1                 &lt;NA&gt;   &lt;NA&gt;\n2 Symbolic_Association    pos\n3 Symbolic_Association syntax\n\n\n\n\n\n\nlibrary(readelan)\n\netf_file &lt;- system.file(\"extdata\", \n                        \"CLP_annotation_v2-2.etf\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(etf_file)\n\nhead(tiers)\n\n                 filename         tier_type            tier participant\n1 CLP_annotation_v2-2.etf          CLP main   CLP handshape        &lt;NA&gt;\n2 CLP_annotation_v2-2.etf    CLP congruence  CLP congruence        &lt;NA&gt;\n3 CLP_annotation_v2-2.etf         CLP event       CLP event        &lt;NA&gt;\n4 CLP_annotation_v2-2.etf   CLP interaction CLP interaction        &lt;NA&gt;\n5 CLP_annotation_v2-2.etf     CLP discourse          CLP DS        &lt;NA&gt;\n6 CLP_annotation_v2-2.etf CLP no vocabulary    CLP movement        &lt;NA&gt;\n  annotator    parent_ref language_ref           constraint          cv_ref\n1      &lt;NA&gt;          &lt;NA&gt;         &lt;NA&gt;                 &lt;NA&gt;   CLP handshape\n2      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association  CLP congruence\n3      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association       CLP event\n4      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association CLP interaction\n5      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association   CLP discourse\n6      &lt;NA&gt; CLP handshape         &lt;NA&gt; Symbolic_Association            &lt;NA&gt;\n\n\n\n\n\n\nlibrary(readelan)\n\necv_file &lt;- system.file(\"extdata\", \n                        \"syntax.ecv\", \n                        package = \"readelan\")\n\ntiers &lt;- read_tiers(ecv_file)\n\nhead(tiers)\n\ndata frame with 0 columns and 0 rows"
+  },
+  {
+    "objectID": "cv.html#extracting-controlled-vocabularies-cv",
+    "href": "cv.html#extracting-controlled-vocabularies-cv",
+    "title": "Extracting CVs",
+    "section": "",
+    "text": "ELAN has the option of adding controlled vocabularies (CV) to annotation files (.eaf) and template files (.etf) for the purposes of constraining the possible input in annotations.\nRegular CVs are internal, stored inside the EAF/ETF file itself. External CVs (ECV) are external, linked through a URL inside the EAF/ETF file to an online .ecv file.\nThe read_cv() function can read both internal and external CVs if the ecv argument is set to TRUE (default). However, this will only work if the URLs are valid and accessible, meaning you need internet access and that the page is not restricted. If so, you may need to set ecv to FALSE, then reading only internal CVs:\n\nlibrary(readelan)\n\neaf_file &lt;- system.file(\"extdata\", \n                        \"example.eaf\", \n                        package = \"readelan\")\n\nread_cv(file = eaf_file, \n        ecv = FALSE)\n\n     filename  url cv_id                                     cve_id lang_ref\n1 example.eaf &lt;NA&gt;   pos cveid_89b2ac38-7313-4737-aa5f-19e1231ccb18      eng\n2 example.eaf &lt;NA&gt;   pos cveid_89b2ac38-7313-4737-aa5f-19e1231ccb18      fin\n3 example.eaf &lt;NA&gt;   pos cveid_d5558ab7-11c3-47d5-9a0f-403724b0e0b7      eng\n4 example.eaf &lt;NA&gt;   pos cveid_d5558ab7-11c3-47d5-9a0f-403724b0e0b7      fin\n5 example.eaf &lt;NA&gt;   pos cveid_f2eec815-c427-4b61-84eb-cd1e1601c9b4      eng\n6 example.eaf &lt;NA&gt;   pos cveid_f2eec815-c427-4b61-84eb-cd1e1601c9b4      fin\n       language        value\n1 English (eng)      pronoun\n2 Finnish (fin)    pronomini\n3 English (eng)         verb\n4 Finnish (fin)        verbi\n5 English (eng)         noun\n6 Finnish (fin) substantiivi\n\n\nIf you instead want to read an .ecv directly, you can do so by simply reading it as the file input of read_cv():\n\nlibrary(readelan)\n\necv_file &lt;- system.file(\"extdata\", \n                        \"syntax.ecv\", \n                        package = \"readelan\")\n\necv &lt;- read_cv(file = ecv_file)\n\necv\n\n    filename  url  cv_id                                     cve_id lang_ref\n1 syntax.ecv &lt;NA&gt; syntax cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b      eng\n2 syntax.ecv &lt;NA&gt; syntax cveid_4990ed36-c1d1-40c6-800e-2bd264d9a89b      fin\n3 syntax.ecv &lt;NA&gt; syntax cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da      eng\n4 syntax.ecv &lt;NA&gt; syntax cveid_de8c8f23-6b49-42da-9bd4-5b8b59d8b1da      fin\n5 syntax.ecv &lt;NA&gt; syntax cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02      eng\n6 syntax.ecv &lt;NA&gt; syntax cveid_f37323ed-9b7e-48d9-bbd6-b9105186ed02      fin\n       language       value\n1 English (eng)     subject\n2 Finnish (fin)    subjekti\n3 English (eng)   predicate\n4 Finnish (fin) predikaatti\n5 English (eng)      object\n6 Finnish (fin)     objekti"
+  },
+  {
+    "objectID": "cv.html#additional-arguments",
+    "href": "cv.html#additional-arguments",
+    "title": "Extracting CVs",
+    "section": "Additional arguments",
+    "text": "Additional arguments\n\nWriting full paths\nThe full_path argument simply determines whether the full file path input should be written to the output data frame as the filename (if TRUE; e.g., “/path/to/elan_file.eaf”), or whether it should be shortened to the base name only (if FALSE, the default; e.g., “elan_file.eaf”).\n\n\nProgress bar\nIf progress is set to TRUE, a progress bar will be printed to the console as files are read. This is mostly useful when reading multiple files that take some time to complete (see Multiple files)."
+  }
+]
