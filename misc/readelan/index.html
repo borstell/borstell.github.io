@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -150,16 +150,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./multiple.html">
  <span class="dropdown-text">Reading multiple files</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./faq.html">
- <span class="dropdown-text">FAQ</span></a>
-  </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./faq.html"> 
+<span class="menu-text">FAQ</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./citation.html"> 
 <span class="menu-text">Citation</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/borstell/readelan">
+ <span class="dropdown-text">Source Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/borstell/readelan/issues">
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -170,9 +189,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -187,14 +205,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#controlled-vocabularies-cv" id="toc-controlled-vocabularies-cv" class="nav-link" data-scroll-target="#controlled-vocabularies-cv">Controlled vocabularies (CV)</a></li>
   <li><a href="#multiple-files" id="toc-multiple-files" class="nav-link" data-scroll-target="#multiple-files">Multiple files</a></li>
   </ul></li>
-  <li><a href="#license-citation" id="toc-license-citation" class="nav-link" data-scroll-target="#license-citation">License &amp; Citation</a>
-  <ul class="collapse">
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
-  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
-  </ul></li>
+  <li><a href="#license-citation" id="toc-license-citation" class="nav-link" data-scroll-target="#license-citation">License &amp; Citation</a></li>
   </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -206,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="readelan" class="level1">
 <h1>readelan</h1>
 <!-- badges: start -->
-<p><a href="https://CRAN.R-project.org/package=readelan"><img src="https://www.r-pkg.org/badges/version/readelan" class="img-fluid" alt="CRAN status"></a> <a href="https://github.com/borstell/readelan/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/borstell/readelan/actions/workflows/R-CMD-check.yaml/badge.svg" class="img-fluid" alt="R-CMD-check"></a> <!-- badges: end --></p>
+<p><a href="https://CRAN.R-project.org/package=readelan"><img src="https://www.r-pkg.org/badges/version/readelan" class="img-fluid" alt="CRAN status"></a> <a href="https://github.com/borstell/readelan/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/borstell/readelan/actions/workflows/R-CMD-check.yaml/badge.svg" class="img-fluid" alt="R-CMD-check"></a> <a href="https://cran.r-project.org/package=readelan"><img src="https://cranlogs.r-pkg.org/badges/readelan" class="img-fluid"></a> <!-- badges: end --></p>
 <p>The goal of <code>{readelan}</code> is to access the data (i.e., annotations) and metadata (e.g., tier types/structure, linked media and controlled vocabularies) in <a href="https://archive.mpi.nl/tla/elan">ELAN</a> annotation files (<code>.eaf</code>), template files (<code>.etf</code>) and external controlled vocabulary files (<code>.ecv</code>) directly in R.</p>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
@@ -225,41 +243,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="annotations" class="level3">
 <h3 class="anchored" data-anchor-id="annotations">Annotations</h3>
 <p>To read annotations from an <code>.eaf</code> file, you can use the <code>read_eaf()</code> function.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readelan)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>annotations <span class="ot">&lt;-</span> <span class="fu">read_eaf</span>(<span class="st">"/path/to/elan/file.eaf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Read more: <a href="./annotations.html">Reading annotations</a>.</p>
 </section>
 <section id="tiers" class="level3">
 <h3 class="anchored" data-anchor-id="tiers">Tiers</h3>
 <p>To retrieve the tiers (IDs/names, types, parent-child structure, etc.) of either an <code>.eaf</code> (annotation) or an <code>.etf</code> (template) file, you can use the <code>read_tiers()</code> function.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readelan)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>tiers <span class="ot">&lt;-</span> <span class="fu">read_tiers</span>(<span class="st">"/path/to/elan/file.eaf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Read more: <a href="./tiers.html">Retrieving tiers</a>.</p>
 </section>
 <section id="media-metadata" class="level3">
 <h3 class="anchored" data-anchor-id="media-metadata">Media metadata</h3>
 <p>To find the media metadata (file paths and types of linked audio and video files) of an <code>.eaf</code> file, you can use the <code>read_media()</code> function.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readelan)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>media <span class="ot">&lt;-</span> <span class="fu">read_media</span>(<span class="st">"/path/to/elan/file.eaf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Read more: <a href="./media.html">Linked media metadata</a>.</p>
 </section>
 <section id="controlled-vocabularies-cv" class="level3">
 <h3 class="anchored" data-anchor-id="controlled-vocabularies-cv">Controlled vocabularies (CV)</h3>
 <p>To extract either internal controlled vocabularies (CV) or linked external controlled vocabularies (ECV) of an <code>.eaf</code> (annotation), <code>.etf</code> (template) or <code>.ecv</code> (external CV) file, you can use the <code>read_cv()</code> function.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readelan)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="fu">read_cv</span>(<span class="st">"/path/to/elan/file.eaf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Read more: <a href="./cv.html">Extracting CVs</a>.</p>
 </section>
 <section id="multiple-files" class="level3">
 <h3 class="anchored" data-anchor-id="multiple-files">Multiple files</h3>
 <p>All <code>read_</code> functions in <code>{readelan}</code> accept either a single file or a vector of files as input.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readelan)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>elan_files <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"/path/to/elan/file1.eaf"</span>, <span class="st">"/path/to/elan/file2.eaf"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>annotations <span class="ot">&lt;-</span> <span class="fu">read_eaf</span>(elan_files)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Read more: <a href="./multiple.html">Reading multiple files</a>.</p>
 </section>
 </section>
 <section id="license-citation" class="level2">
 <h2 class="anchored" data-anchor-id="license-citation">License &amp; Citation</h2>
-<section id="license" class="level3">
-<h3 class="anchored" data-anchor-id="license">License</h3>
 <p><code>{readelan}</code> is released under the permissive <a href="https://github.com/borstell/readelan/blob/main/LICENSE.md">MIT License</a>.</p>
-</section>
-<section id="citation" class="level3">
-<h3 class="anchored" data-anchor-id="citation">Citation</h3>
 <p>You can cite <code>{readelan}</code> by using the <code>citation("readelan")</code> function in R (see also <a href="./citation.html">Citation</a>)</p>
 
 
-</section>
 </section>
 </section>
 

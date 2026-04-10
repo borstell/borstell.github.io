@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -150,16 +150,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./multiple.html">
  <span class="dropdown-text">Reading multiple files</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./faq.html">
- <span class="dropdown-text">FAQ</span></a>
-  </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./faq.html" aria-current="page"> 
+<span class="menu-text">FAQ</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./citation.html"> 
 <span class="menu-text">Citation</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/borstell/readelan">
+ <span class="dropdown-text">Source Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/borstell/readelan/issues">
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -170,9 +189,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -183,10 +201,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#what-is-the-function-output" id="toc-what-is-the-function-output" class="nav-link" data-scroll-target="#what-is-the-function-output">What is the function output?</a></li>
   <li><a href="#can-i-select-which-tiers-to-read" id="toc-can-i-select-which-tiers-to-read" class="nav-link" data-scroll-target="#can-i-select-which-tiers-to-read">Can I select which tiers to read?</a></li>
   <li><a href="#can-i-write-files-back-into-elan" id="toc-can-i-write-files-back-into-elan" class="nav-link" data-scroll-target="#can-i-write-files-back-into-elan">Can I write files back into ELAN?</a></li>
+  <li><a href="#where-does-the-logo-come-from" id="toc-where-does-the-logo-come-from" class="nav-link" data-scroll-target="#where-does-the-logo-come-from">Where does the logo come from?</a></li>
   <li><a href="#should-i-cite-readelan" id="toc-should-i-cite-readelan" class="nav-link" data-scroll-target="#should-i-cite-readelan">Should I cite <code>{readelan}</code>?</a></li>
   <li><a href="#i-found-a-bug" id="toc-i-found-a-bug" class="nav-link" data-scroll-target="#i-found-a-bug">I found a bug</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -224,22 +247,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"example.eaf"</span>, </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">package =</span> <span class="st">"readelan"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>microbenchmark<span class="sc">::</span><span class="fu">microbenchmark</span>(</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  readelan<span class="sc">::</span><span class="fu">read_eaf</span>(eaf_file),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  phonfieldwork<span class="sc">::</span><span class="fu">eaf_to_df</span>(eaf_file),</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  act<span class="sc">::</span><span class="fu">import_eaf</span>(eaf_file),</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">times =</span> <span class="dv">10</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Unit: milliseconds
-                               expr       min        lq      mean    median
-       readelan::read_eaf(eaf_file)  3.750718  3.886996  5.138851  4.924746
- phonfieldwork::eaf_to_df(eaf_file) 13.535165 14.084316 88.521082 14.151778
-          act::import_eaf(eaf_file) 61.852629 67.594326 79.324778 68.738691
-        uq       max neval cld
-  5.826621   7.55366    10   a
- 14.800122 754.83798    10   a
- 84.518526 153.25400    10   a</code></pre>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>bench_test <span class="ot">&lt;-</span> </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  microbenchmark<span class="sc">::</span><span class="fu">microbenchmark</span>(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    readelan<span class="sc">::</span><span class="fu">read_eaf</span>(eaf_file),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    phonfieldwork<span class="sc">::</span><span class="fu">eaf_to_df</span>(eaf_file),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    act<span class="sc">::</span><span class="fu">import_eaf</span>(eaf_file),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">times =</span> <span class="dv">100</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="faq_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -255,30 +277,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="what-is-the-function-output">What is the function output?</h2>
 <p>The <code>read_</code> functions of <code>{readelan}</code> output base R data frames. If you read multiple files, the individual data frames (from each input file) are already combined together into a single data frame in the output.</p>
 <p>If you prefer to work with <code>{tidyverse}</code>-style <a href="https://tibble.tidyverse.org"><em>tibbles</em></a>, you will need to convert the output:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_eaf</span>(<span class="st">"path/to/elan_file.eaf"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_eaf</span>(<span class="st">"path/to/elan_file.eaf"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="can-i-select-which-tiers-to-read" class="level2">
 <h2 class="anchored" data-anchor-id="can-i-select-which-tiers-to-read">Can I select which tiers to read?</h2>
 <p>Yes! In <code>read_eaf()</code>, you can use the arguments <code>tiers</code> (or <code>xpath</code> if more advanced) to specify specific tiers by names or types to read. This speeds up the process of reading the data, since only some tiers need to be read.</p>
 <p>For instance, if I know that I only want to read the tiers “Lexem_Gebärde_l_A” and “Lexem_Gebärde_r_A” in this file from the <a href="https://www.sign-lang.uni-hamburg.de/dgs-korpus/index_en.html">DGS-Korpus</a>, I can specify this and read the file much faster.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dgs_file <span class="ot">&lt;-</span> <span class="st">"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>microbenchmark<span class="sc">::</span><span class="fu">microbenchmark</span>(</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  readelan<span class="sc">::</span><span class="fu">read_eaf</span>(dgs_file),</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  readelan<span class="sc">::</span><span class="fu">read_eaf</span>(dgs_file,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">tiers =</span> <span class="fu">list</span>(<span class="at">tier =</span> <span class="fu">c</span>(<span class="st">"Lexem_Gebärde_l_A"</span>, <span class="st">"Lexem_Gebärde_r_A"</span>))),</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">times =</span> <span class="dv">1</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dgs_file <span class="ot">&lt;-</span> <span class="st">"https://www.sign-lang.uni-hamburg.de/meinedgs/eaf/1413451-11105600-11163240.eaf"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>microbenchmark<span class="sc">::</span><span class="fu">microbenchmark</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  readelan<span class="sc">::</span><span class="fu">read_eaf</span>(dgs_file),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  readelan<span class="sc">::</span><span class="fu">read_eaf</span>(dgs_file,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">tiers =</span> <span class="fu">list</span>(<span class="at">tier =</span> <span class="fu">c</span>(<span class="st">"Lexem_Gebärde_l_A"</span>, <span class="st">"Lexem_Gebärde_r_A"</span>))),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">times =</span> <span class="dv">1</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unit: milliseconds
                                                                                                 expr
                                                                         readelan::read_eaf(dgs_file)
  readelan::read_eaf(dgs_file, tiers = list(tier = c("Lexem_Gebärde_l_A",      "Lexem_Gebärde_r_A")))
-      min       lq     mean   median       uq      max neval
- 727.2490 727.2490 727.2490 727.2490 727.2490 727.2490     1
- 419.4928 419.4928 419.4928 419.4928 419.4928 419.4928     1</code></pre>
+       min        lq      mean    median        uq       max neval
+ 1442.2413 1442.2413 1442.2413 1442.2413 1442.2413 1442.2413     1
+  628.7765  628.7765  628.7765  628.7765  628.7765  628.7765     1</code></pre>
 </div>
 </div>
 </section>
@@ -286,9 +308,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="can-i-write-files-back-into-elan">Can I write files back into ELAN?</h2>
 <p>No.&nbsp;The goal of <code>{readelan}</code> is to allow for the reading of ELAN data into R, not the other way around. ELAN has great options for importing data from character-separated values (e.g., <code>.csv</code>) files and other file formats. However, if you do require the possibility to write data back into ELAN files, you should look at the <a href="https://cran.r-project.org/package=phonfieldwork"><code>{phonfieldwork}</code></a> package.</p>
 </section>
+<section id="where-does-the-logo-come-from" class="level2">
+<h2 class="anchored" data-anchor-id="where-does-the-logo-come-from">Where does the logo come from?</h2>
+<p>A lot of R packages use a so-called <em>hex sticker</em> logos as a type of branding. This logo, like many others, was created using the <a href="https://github.com/GuangchuangYu/hexSticker"><code>{hexSticker}</code></a> package. The idea was to display the words <em>read</em> and <em>ELAN</em> in the ELAN-style red color, arranged among the recognizable shape of stacked, sequential annotation cells. The typeface (“font”) is called <a href="https://fonts.google.com/specimen/MuseoModerno"><em>MuseoModerno</em></a>.</p>
+</section>
 <section id="should-i-cite-readelan" class="level2">
 <h2 class="anchored" data-anchor-id="should-i-cite-readelan">Should I cite <code>{readelan}</code>?</h2>
 <p>My personal opinion is to cite software for two reasons: to <strong>credit the work</strong> (especially if it is open source and/or voluntary-based) and for <strong>reproducibility</strong>. You can cite <code>{readelan}</code> by using the <code>citation("readelan")</code> function in R (see also <a href="./citation.html">Citation</a>).</p>
+<p>Remember to also <a href="https://archive.mpi.nl/tla/elan/cite">cite ELAN</a> itself, when using it for research!</p>
 </section>
 <section id="i-found-a-bug" class="level2">
 <h2 class="anchored" data-anchor-id="i-found-a-bug">I found a bug</h2>
